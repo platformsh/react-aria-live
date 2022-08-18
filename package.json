@@ -1,6 +1,6 @@
 {
-  "name": "react-aria-live",
-  "version": "2.0.5",
+  "name": "@platformsh/react-aria-live",
+  "version": "2.0.6",
   "description": "Add aria-live messaging to your React app",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -13,6 +13,7 @@
   "scripts": {
     "build": "nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
+    "prepare": "nwb build-react-component",
     "start": "nwb serve-react-demo",
     "test": "node scripts/test.js --env=jsdom",
     "format": "prettier --write --single-quote --tab-width=2 --trailing-comma=es5 --jsx-bracket-same-line src/**/*.js"
@@ -21,7 +22,7 @@
     "uuid": "^3.2.1"
   },
   "peerDependencies": {
-    "react": "^16.3.x"
+    "react": ">16.3"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
